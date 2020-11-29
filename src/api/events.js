@@ -29,7 +29,7 @@ export function featureUpdateEvent(id, data) {
 
 export function deleteEvent(id) {
   return request({
-    url: '/gallery/' + id,
+    url: '/events/' + id,
     method: 'delete'
   })
 }
