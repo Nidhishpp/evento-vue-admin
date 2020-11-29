@@ -8,10 +8,13 @@ export function fetchList(query) {
   })
 }
 
-export function updateGallery(id, data) {
+export function createEvent(data) {
   return request({
-    url: '/gallery/' + id,
-    method: 'patch',
+    url: '/events',
+    method: 'post',
+    headers: {
+      'Content-Type': 'multipart/form-data'
+    },
     data
   })
 }
@@ -31,29 +34,4 @@ export function deleteEvent(id) {
   })
 }
 
-// export function fetchPv(pv) {
-//   return request({
-//     url: '/vue-element-admin/article/pv',
-//     method: 'get',
-//     params: { pv }
-//   })
-// }
 
-export function createGallery(data) {
-  return request({
-    url: '/gallery',
-    method: 'post',
-    headers: {
-      'Content-Type': 'multipart/form-data'
-    },
-    data
-  })
-}
-
-// export function updateArticle(data) {
-//   return request({
-//     url: '/vue-element-admin/article/update',
-//     method: 'post',
-//     data
-//   })
-// }

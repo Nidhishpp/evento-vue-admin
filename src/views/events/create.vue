@@ -1,13 +1,13 @@
 <template>
-  <gallery-detail />
+  <event-detail />
 </template>
 
 <script>
-import GalleryDetail from './components/GalleryDetail'
+import EventDetail from './components/EventDetail'
 
 export default {
-  name: 'CreateGallery',
-  components: { GalleryDetail }
+  name: 'CreateEvent',
+  components: { EventDetail }
 }
 </script>
 
